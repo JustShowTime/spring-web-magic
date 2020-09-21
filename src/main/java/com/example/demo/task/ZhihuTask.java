@@ -40,11 +40,11 @@ public class ZhihuTask {
                         // 从https://www.zhihu.com/explore开始抓
 //                        .addUrl("https://voice.hupu.com/nba/1")
 //                        https://m.imitui.com/manhua/haizeiwang/
-                .addUrl("https://manhua.fzdm.com/2/Vol_001/")
+                .addUrl("https://www.biquge.com/25_25184/1589038.html")
                         // 抓取到的数据存数据库
                         .addPipeline(zhihuPipeline)
                         // 开启2个线程抓取
-                        .thread(2)
+                        .thread(1)
                         // 异步启动爬虫
                         .start();
             } catch (Exception ex) {
